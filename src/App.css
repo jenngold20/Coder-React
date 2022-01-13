@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+.carritoimg img {
+  width: 35px;
+  height: 35px;
+}
+
+.carritoimg p{
+  float: right;
+  background-color: red;
+  border-radius: 100%;
+  width: 25px;
+  height: 25px;
+}
+
+
