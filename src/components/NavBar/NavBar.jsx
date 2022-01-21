@@ -7,7 +7,7 @@ const NavBar = ({ data }) => {
 		<>
 			<Navbar bg='light' expand='lg'>
 				<Container>
-					<Navbar.Brand href='#home'>Gold Games</Navbar.Brand>
+					<Navbar.Brand href='#home'>Barbie Collector</Navbar.Brand>
 					<Navbar.Toggle aria-controls='basic-navbar-nav' />
 					<Navbar.Collapse id='basic-navbar-nav'>
 						<Nav className='me-auto'>
