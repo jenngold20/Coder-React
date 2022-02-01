@@ -1,0 +1,35 @@
+.counter{
+    border-radius: 5px;
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.botonRestar{
+    margin-right: 10px;
+    width: 25px;
+    border-radius: 4px;
+}
+
+.botonSumar{
+    margin-left: 10px;
+    width: 25px;
+    border-radius: 4px;
+}
+
+.agregarAlCarrito{
+    margin-top: 10px;
+    border-radius: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 70%;
+}
+
+button{
+    border: none;
+    font: inherit;
+    background-color: #e300bd;
+    color: white;
+}

@@ -1,21 +1,28 @@
-import './App.css'
-import NavBar from './components/NavBar/NavBar'
-import ItemListContainer from './components/ItemListContainer/ItemListContainer'
-
-const ItemList = [
-	{ nombre: ' Inicio', enlace: '/' },
-	{ nombre: ' Novedades', enlace: '/novedades' },
-	{ nombre: 'Productos', enlace: '/productos' },
-  { nombre: ' Nosotros', enlace: '/nosotros' },
-]
+import "./App.css";
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
+import NavBar from "./components/NavBar/NavBar";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
 
 function App() {
-	return (
-		<div className='App'>
-      <NavBar data={ItemList} />
-      <ItemListContainer greeting="Barbie"/>
-		</div>
-	)
+return (
+    <BrowserRouter>
+    <div className="App">
+        <NavBar />
+        <Switch>
+        <Route exact path="/">
+            <ItemListContainer greeting="Barbie Collector" />
+        </Route>
+        <Route path="/detalle/:itemId">
+            <ItemDetailContainer />
+        </Route>
+        <Route path="/category/:categoryId">
+            <ItemListContainer />
+        </Route>
+        </Switch>
+    </div>
+    </BrowserRouter>
+);
 }
 
-export default App
+export default App;

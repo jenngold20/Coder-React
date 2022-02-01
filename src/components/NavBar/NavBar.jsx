@@ -1,24 +1,59 @@
+import React from "react";
 import './NavBar.css'
 import CartWidget from '../CartWidget/CartWidget'
-import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap'
+import { NavLink } from "react-router-dom";
+
+
 
 const NavBar = ({ data }) => {
 	return (
 		<>
-			<Navbar bg='light' expand='lg'>
-				<Container>
-					<Navbar.Brand href='#home'>Barbie Collector</Navbar.Brand>
-					<Navbar.Toggle aria-controls='basic-navbar-nav' />
-					<Navbar.Collapse id='basic-navbar-nav'>
-						<Nav className='me-auto'>
-							{data.map((item) => {
-                                return <Nav.Link href={item.enlace}>{ item.nombre}</Nav.Link>
-							})}
-							<CartWidget />
-						</Nav>
-					</Navbar.Collapse>
-				</Container>
-			</Navbar>
+
+
+
+<div className="navbar">
+    <NavLink to="/">
+        <h1>Barbie Collector</h1>
+    </NavLink>
+    <ul className="navLinks">
+        <li>
+        <NavLink
+            to="/category/productos"
+            className="navLink"
+            activeClassName="currentCategory"
+        >
+            Productos
+        </NavLink>
+        </li>
+        <li>
+        <NavLink
+            to="/category/Novedades"
+            className="navLink"
+            activeClassName="currentCategory"
+        >
+            Novedades
+        </NavLink>
+        </li>
+        <li>
+        <NavLink
+            to="/category/Nosotros"
+            className="navLink"
+            activeClassName="currentCategory"
+        >
+        Nosotros
+    </NavLink>
+        </li>
+        <li>
+        <NavLink
+            to="/cart"
+            className="navLink"
+            activeClassName="currentCategory"
+        >
+            <CartWidget />
+        </NavLink>
+        </li>
+    </ul>
+    </div>
 		</>
 	)
 }

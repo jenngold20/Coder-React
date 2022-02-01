@@ -5,3 +5,57 @@
 .nav li{
     list-style: none;
 }
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    background: rgb(248, 165, 234);
+    box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+}
+
+.navLinks{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navLink{
+    margin-right: 0.5rem;
+    text-decoration: none;
+    color: rgb(200, 0, 250);
+    padding: 3px 6px;
+    border-radius: 10px;
+}
+
+.navLink:hover{
+    background-color: #eee;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h1{
+    text-decoration: none;
+    color: black;
+}
+
+.currentCategory{
+    background-color: #eee;
+}
+
+@media (max-width: 576px) {
+    .navbar{
+        justify-content: center;
+    }
+}

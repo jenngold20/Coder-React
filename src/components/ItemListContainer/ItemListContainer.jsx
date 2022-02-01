@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
-import ItemCount from "./ItemCount";
-import ItemList from "./ItemList";
-
+import ItemList from "../ItemList/ItemList";
+import { useParams } from "react-router-dom/cjs/react-router-dom.min";
 
 export default function ItemListContainer(props){
     function onAdd(){
@@ -45,14 +44,8 @@ let ItemListJson = [
   return (
     <>
       <h3> {props.greeting} </h3>
-      {/* <ItemCount  stock={10} initial={1} onAdd={onAdd} /> */}
+      {/* { <ItemCount  stock={10} initial={1} onAdd={onAdd} /> } */}
       <ItemList itemList={itemList} />
     </>
   );
 }
-
-
-///////////////////////////////////////////////////////////
-
-
-
