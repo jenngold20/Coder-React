@@ -5,11 +5,9 @@ import { NavLink } from "react-router-dom";
 
 
 
-const NavBar = ({ data }) => {
+const NavBar = () => {
 	return (
 		<>
-
-
 
 <div className="navbar">
     <NavLink to="/">
