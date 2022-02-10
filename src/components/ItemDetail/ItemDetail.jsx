@@ -2,38 +2,39 @@ import React, { useState, useContext } from "react";
 import "./ItemDetail.css";
 import ItemCount from "../ItemCount/ItemCount";
 import { Link } from "react-router-dom";
-import { contexto } from "../../Context/CartContext";
 
 
-const ItemDetail = ({ item }) => {
-    const [irAlCarrito, setIrAlCarrito] = useState(false);
-    const { addItem } = useContext(contexto);
+export default function ItemDetail({ item }) {
 
-    const onAdd = (cantidad) => {
-        addItem(item, cantidad);
-        setIrAlCarrito(true);
-    };
+    const [VoyAlCarrito, setVoyAlCarrito] = useState(false);
+    console.log(item);
+    return (
+        <>
+            {item ? (
+                <div className="producto-Card">
+                <div className="imgContainer">
+                        <img  src={item.imagen} alt="Imagen del producto" />
+                    </div>
+                    <div>
+                        <h4>{item.titulo}</h4>
+                        <p>{item.year}</p>
+                        <p >$ {item.precio}</p>
+                        {
+                            !VoyAlCarrito &&
+                            <ItemCount id={item.id} stock={item.stock} initial={1} onAdd={setVoyAlCarrito} ></ItemCount>
+                        }
+                        <div>
+                                <Link to={`/cart`} className="irCarrito">
+                                    Ir al carrito
+                                </Link>
 
-return (
-    <div className="producto-Card">
-    <div className="imgContainer">
-    <h2>{item.titulo}</h2>
-        <img src={item.imagen} alt="productImg" className="img" />
-    </div>
-    <div className="descriptionContainer">
-        
-        <p>{item.year}</p>
-        <h1>$ {item.precio}</h1>
-        <div>
-        {irAlCarrito ? (
-            <Link to="/cart" className="verCarrito">
-            Ver carrito
-            </Link>
-        ) : (
-            <ItemCount stock={5} initial={1} onAdd={onAdd} /> )}
-    </div>
-    </div> </div>
-);
-};
-
-export default ItemDetail;
+                        </div>
+                    </div>
+                </div>
+            ) : (
+                <div>Cargando detalle</div>
+            )
+            }
+        </>
+    );
+}

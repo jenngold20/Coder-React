@@ -1,7 +1,7 @@
 .producto-Card{
     width: 70%;
     height: auto;
-    background-color: rgb(255, 0, 212);
+    background-color: rgb(204, 82, 184);
     border-radius: 5px;
     box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
     display: flex;
@@ -17,7 +17,7 @@
 }
 
 .img{
-    width: 100%;
+    width: 70%;
     height: auto;
 }
 
