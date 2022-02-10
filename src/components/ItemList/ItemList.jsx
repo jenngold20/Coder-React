@@ -5,7 +5,7 @@ export default function ItemList(props) {
   return (
     <>
       {props.itemList.length > 0 ? (
-        <div className="d-flex">
+        <div>
           {props.itemList.map((item) => {
             return <Item key={item.id} item={item} />;
           })}

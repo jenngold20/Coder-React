@@ -1,7 +1,7 @@
-import React, { useState } from "react";
 import "./ItemCount.css";
+import React, { useContext, useState } from "react";
 
-const ItemCount = ({ stock, initial, onAdd }) => {
+export default function ItemCount({ stock, initial, onAdd }){
 const [counter, setCounter] = useState(initial);
 
 const sumar = () => {
@@ -17,7 +17,7 @@ const restar = () => {
 };
 
 return (
-    <div className="counter">
+    <div className="contador">
     <div>
         <button className="botonRestar" onClick={() => restar()}>
         -
@@ -32,4 +32,3 @@ return (
 );
 };
 
-export default ItemCount;

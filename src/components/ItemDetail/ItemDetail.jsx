@@ -13,12 +13,12 @@ export default function ItemDetail({ item }) {
             {item ? (
                 <div className="producto-Card">
                 <div className="imgContainer">
-                        <img  src={item.imagen} alt="Imagen del producto" />
+                        <img  src={item.image} alt="Imagen del producto" />
                     </div>
                     <div>
-                        <h4>{item.titulo}</h4>
+                        <h4>{item.title}</h4>
                         <p>{item.year}</p>
-                        <p >$ {item.precio}</p>
+                        <p >$ {item.price}</p>
                         {
                             !VoyAlCarrito &&
                             <ItemCount id={item.id} stock={item.stock} initial={1} onAdd={setVoyAlCarrito} ></ItemCount>

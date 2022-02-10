@@ -7,11 +7,11 @@ const Item = ({item}) => {
   return (
     <div className="item-Card">
       <div className="contenedorImg">
-        <img src={item.imagen} alt="#" className="imagen" />
+        <img src={item.image} alt="#" className="imagen" />
       </div>
       <div className="descItem">
-        <h4>{item.titulo}</h4>
-        <h4>$ {item.precio}</h4>
+        <h4>{item.title}</h4>
+        <h4>$ {item.price}</h4>
         <Link to={`/detalle/${item.id}`} className="detalle">
           Ver detalle
         </Link>

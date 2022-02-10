@@ -1,36 +1,48 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
+import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 import { contexto } from "../../Context/CartContext";
 
 const Cart = () => {
-  const { cart, removeItem, clear } = useContext(contexto);
+  const { cart, removeItem, clear, totalCarrito } = useContext(contexto);
+  const [total, setTotal] = useState(0);
+
+  useEffect(() => {
+    setTotal(totalCarrito());
+  }, [totalCarrito]);
 
   return (
     <>
       {cart.length === 0 ? (
-        <h1>Tu carrito está vacío</h1>
+        <>
+          <h2>Carrito vacío...</h2>
+          <h1>
+            <NavLink to="/">Ver productos</NavLink>
+          </h1>
+        </>
       ) : (
-        <div className="cartCard">
+        <div>
+          <h1>Total a pagar: $ {total}</h1>
           {cart.map((i) => (
-            <div key={i.item.id} className="cardProducto">
-              <div className="imgCart">
-                <img src={i.item.imagen} alt="" className="imgCarrito" />
+            <div key={i.id} >
+              <div >
+                <img src={i.image} alt=""  />
               </div>
-              <div className="descripcion">
-                <h4>{i.item.titulo}</h4>
+              <div>
+                <h4>{i.title}</h4>
                 <p>Cantidad: {i.cantidad}</p>
+                <p>Total: $ {i.price * i.cantidad}</p>
               </div>
-              <div className="boton">
+              <div>
                 <button
-                  className="botonEliminar"
-                  onClick={() => removeItem(i.item.id)}
+                  onClick={() => removeItem(i.id)}
                 >
                   Eliminar
                 </button>
               </div>
             </div>
           ))}
-          <button className="vaciarCarrito" onClick={() => clear()}>
-            Vaciar Carrito
+          <button onClick={() => clear()}>
+            Carrito vacío
           </button>
         </div>
       )}

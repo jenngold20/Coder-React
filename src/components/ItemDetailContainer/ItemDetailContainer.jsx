@@ -9,20 +9,31 @@ export default function ItemDetailContainer(props) {
     let ItemListJson = [
         {
             id: "4836",
-            titulo: "Barbie Dance Magic",
+            title: "Barbie Dance Magic",
             year: "1990",
-            precio: 1500,
+            price: 1500,
             stock: 10,
-            imagen: "https://barbieguide.sosugary.com/albums/userpics/10001/normal_dancemagic-a1.jpg",
+            image: "https://barbieguide.sosugary.com/albums/userpics/10001/normal_dancemagic-a1.jpg",
         },
         {
             id: "9725",
-            titulo: "Barbie Lights & Lace",
+            title: "Barbie Lights & Lace",
             year: "1990",
-            precio: 1500,
+            price: 1500,
             stock: 10,
-            imagen: "https://barbieguide.sosugary.com/albums/userpics/10001/normal_BARBIE-LIGHTSLACE-1.jpg",
+            image: "https://barbieguide.sosugary.com/albums/userpics/10001/normal_BARBIE-LIGHTSLACE-1.jpg",
         },
+
+        {
+            id: "7081",
+            title: "Ken Dance Magic",
+            year: "1990",
+            price: 2500,
+            category: "Ken",
+            stock: 10,
+            image: "https://barbieguide.sosugary.com/albums/userpics/10001/normal_s-l1600~40.jpg",
+        },
+    
     ];
 
     const obtenerProducto = new Promise((resolve, reject) => {

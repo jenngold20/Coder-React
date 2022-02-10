@@ -13,7 +13,7 @@
     align-items: center;
     justify-content: space-around;
     width: 100%;
-    background: rgb(248, 165, 234);
+    background: #ff60ca;
     box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
 }
 
@@ -27,13 +27,15 @@
 .navLink{
     margin-right: 0.5rem;
     text-decoration: none;
-    color: rgb(200, 0, 250);
+    color: rgb(255, 255, 255);
     padding: 3px 6px;
     border-radius: 10px;
 }
 
 .navLink:hover{
-    background-color: #eee;
+    background-color: rgb(247, 0, 214);
+    color: aliceblue;
+    list-style: none;
 }
 
 li{
