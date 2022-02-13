@@ -12,7 +12,7 @@ let ItemListJson = [
     {
       id: "4836",
       title: "Barbie Dance Magic",
-      year: "1990",
+      description: "1990",
       price: 1500,
       category: "Barbie",
       stock: 10,
@@ -21,7 +21,7 @@ let ItemListJson = [
     {
       id: "9725",
       title: "Barbie Lights & Lace",
-      year: "1990",
+      description: "1990",
       price: 1500,
       category: "Barbie",
       stock: 10,
@@ -30,13 +30,32 @@ let ItemListJson = [
     {
       id: "7081",
       title: "Ken Dance Magic",
-      year: "1990",
+      description: "1990",
       price: 2500,
       category: "Ken",
       stock: 10,
       image: "https://barbieguide.sosugary.com/albums/userpics/10001/normal_s-l1600~40.jpg",
     },
 
+    {
+      id: "12899",
+      title: "Barbie 35th Anniversary",
+      description: "1994",
+      price: 4800,
+      category: "Barbie",
+      stock: 5,
+      image: "https://barbieguide.sosugary.com/albums/userpics/10001/35th_Anniversary_Barbie_Keepsake_Collection_Nostalgic_Gift__12899.jpg",
+  },
+
+  {
+      id: "13515",
+      title: "Ken Winter Sports",
+      description: "1994",
+      price: 1500,
+      category: "Ken",
+      stock: 8,
+      image: "https://barbieguide.sosugary.com/albums/userpics/10001/normal_s-l1600_28129~37.jpg",
+  },
 
 
 

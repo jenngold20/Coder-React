@@ -1,11 +1,12 @@
 .item-Card{
-    width: 200px;
-    height: 450px;
-    background-color: rgb(243, 182, 248);
-    border-radius: 5px;
+    width: 250px;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    border-color: #fa6cf3;
     box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
     padding: 1.2rem;
-    display: flex;
+    display: inline-block;
     flex-direction: column;
     margin-right: 1rem;
     margin-left: 1rem;
@@ -28,4 +29,10 @@
     color: white;
     border-radius: 8px;
     padding: 4px 7px;
+    text-decoration: none;
+
+}
+
+.detalle:hover {
+color:rgb(247, 162, 228);
 }
