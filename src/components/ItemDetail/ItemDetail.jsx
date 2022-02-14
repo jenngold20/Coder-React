@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./ItemDetail.css";
 import ItemCount from "../ItemCount/ItemCount";
 import { Link } from "react-router-dom";
+import Loader from "../Loader/Loader";
 
 
 export default function ItemDetail({ item, onAdd, added }) {
@@ -25,7 +26,7 @@ export default function ItemDetail({ item, onAdd, added }) {
                     </div>
                 </div>
             ) : (
-                <div>Cargando detalle</div>
+                <Loader />
             )
             }
         </>

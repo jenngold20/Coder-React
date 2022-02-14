@@ -82,9 +82,9 @@ export default function ItemDetailContainer(props) {
 
 
 
-    const onAdd = (count) => {
-        console.log(`Agregaste ${item.title}, cantidad: ${count}.`);
-        addToCart(item, count);
+    const onAdd = (cantidad) => {
+        console.log(`Agregaste ${item.title}, cantidad: ${cantidad}.`);
+        addToCart(item, cantidad);
         setAdded(true); 
     }
 

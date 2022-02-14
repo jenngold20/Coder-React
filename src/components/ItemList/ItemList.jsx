@@ -1,5 +1,6 @@
 import React from "react";
 import Item from "../Item/Item";
+import  Loader from "../Loader/Loader";
 
 export default function ItemList(props) {
   return (
@@ -11,7 +12,7 @@ export default function ItemList(props) {
           })}
         </div>
       ) : (
-        <div>Loading</div>
+        <div><Loader /></div>
       )}
     </>
   );
