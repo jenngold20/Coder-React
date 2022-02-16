@@ -25,16 +25,16 @@ const Cart = () => {
           {cart.map((i) => (
             <div key={i.id} >
               <div >
-                <img src={i.image} alt=""  />
+                <img src={i.item.image} alt=""  />
               </div>
               <div>
                 <h4>{i.title}</h4>
-                <p>Cantidad: {i.cantidad}</p>
-                <p>Total: $ {i.price * i.cantidad}</p>
+                <p>Cantidad: {i.count}</p>
+                <p>Total: $ {i.item.price * i.count}</p>
               </div>
               <div>
                 <button
-                  onClick={() => removeItem(i.id)}
+                  onClick={() => removeItem(i.item.id)}
                 >
                   Eliminar
                 </button>

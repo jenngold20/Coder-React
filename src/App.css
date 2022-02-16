@@ -21,10 +21,11 @@
 
 .carritoimg p{
   float: right;
-  background-color: red;
+  background-color: rgb(255, 255, 255);
   border-radius: 100%;
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
+  color:rgb(255, 0, 212);
 }
 
 

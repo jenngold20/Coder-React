@@ -31,15 +31,14 @@ const CartContext = ({ children }) => {
 
   const totalCarrito = () => {
     return cart
-      .map((item) => item.price * item.count)
-      .reduce((acum, valor) => acum + valor, 0);
+      .map((item) => item.item.price * item.count)
+      .reduce((acum, valor) => acum + valor, 0)
   };
 
   const totalItemsCart = () => {
-    return cart.reduce((acum, producto) => {
-      return acum + producto.count;
-    }, 0);
+    return cart.reduce((acum, producto) => acum + producto.count,0);
   };
+
 
   return (
     <contexto.Provider
