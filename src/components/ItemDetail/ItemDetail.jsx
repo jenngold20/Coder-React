@@ -20,7 +20,7 @@ export default function ItemDetail({ item, onAdd, added }) {
                         <p>{item.description}</p>
                         <p >$ {item.price}</p>
                         <div>
-                        {added ? <Link to='/cart'>Ir Al Carrito</Link> : <ItemCount id={item.id} stock={item.stock} initial={1} onAdd={onAdd} /> }
+                        {added ? <Link to='/cart' className="IrAlCarrito">Ir al carrito</Link> : <ItemCount id={item.id} stock={item.stock} initial={1} onAdd={onAdd} /> }
 
                         </div>
                     </div>

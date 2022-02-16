@@ -21,6 +21,28 @@
     height: auto;
 }
 
+.IrAlCarrito{
+    background-color: #ffffff;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border-radius: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 70%;
+    color: rgb(252, 0, 210);
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.IrAlCarrito:hover {
+    color:rgb(247, 162, 228);
+    }
+
 .descriptionContainer{
     width: 50%;
     padding-left: 10px;
