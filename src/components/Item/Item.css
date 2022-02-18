@@ -15,9 +15,7 @@
     align-items: center;
 }
 
-.contenedorImg{
-    overflow: hidden;
-}
+
 
 .imagen{
     width: 100%;
@@ -25,7 +23,7 @@
 }
 
 .detalle{
-    background-color: #fa6cf3;
+    background-color: rgb(252, 0, 210);
     color: white;
     border-radius: 8px;
     padding: 4px 7px;

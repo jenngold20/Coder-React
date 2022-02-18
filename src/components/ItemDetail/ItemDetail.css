@@ -1,14 +1,19 @@
 .producto-Card{
-    width: 70%;
+    width: 50%;
     height: auto;
-    background-color: rgb(204, 82, 184);
-    border-radius: 5px;
+    background-color: white;
+    border-radius: 10px;
     box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
-    display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin-bottom: 50px;
+    align-items:center;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    display: flex;
 }
 
 .imgContainer{
@@ -22,22 +27,20 @@
 }
 
 .IrAlCarrito{
-    background-color: #ffffff;
-    display: block;
+    background-color: rgb(252, 0, 210);
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
     border-radius: 8px;
     padding-top: 5px;
     padding-bottom: 5px;
-    width: 70%;
-    color: rgb(252, 0, 210);
+    width: 80%;
+    color:rgb(255, 255, 255);
     text-decoration: none;
     justify-content: center;
     align-items: center;
 
 }
-
 
 .IrAlCarrito:hover {
     color:rgb(247, 162, 228);
