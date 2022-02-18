@@ -46,7 +46,6 @@ const NavBar = () => {
         <NavLink
             to="/cart"
             className="navLink"
-            activeClassName="currentCategory"
         >
             <CartWidget />
         </NavLink>
