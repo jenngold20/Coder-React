@@ -3,11 +3,11 @@ import carrito from "./carrito.png"
 import { contexto } from "../../Context/CartContext"
 
 const CartWidget = () => {
-	const { totalItemsCart } = useContext(contexto)
+	const { CartItems } = useContext(contexto)
 
     return (
         <div className="carritoimg">
-            <img src={carrito} alt="carrito"/><p>{totalItemsCart}</p>
+            <img src={carrito} alt="carrito"/><p>{CartItems}</p>
         </div>
 
     )

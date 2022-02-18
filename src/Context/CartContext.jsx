@@ -32,17 +32,17 @@ const CartContext = ({ children }) => {
   const totalCarrito = () => {
     return cart
       .map((item) => item.item.price * item.count)
-      .reduce((acum, valor) => acum + valor, 0)
+      .reduce((a, valor) => a + valor, 0)
   };
 
-  const totalItemsCart = () => {
-    return cart.reduce((acum, producto) => acum + producto.count,0);
+  const CartItems = () => {
+    return cart.reduce((a, b) => a + b.count,0);
   };
 
 
   return (
     <contexto.Provider
-      value={{ cart, addToCart, removeItem, clear, totalCarrito, totalItemsCart }}>
+      value={{ cart, addToCart, removeItem, clear, totalCarrito, CartItems }}>
       {children}
     </contexto.Provider>
   );
