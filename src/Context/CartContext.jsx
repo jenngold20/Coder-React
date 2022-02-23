@@ -39,7 +39,6 @@ const CartContext = ({ children }) => {
     return cart.reduce((a, b) => a + b.count,0);
   };
 
-
   return (
     <contexto.Provider
       value={{ cart, addToCart, removeItem, clear, totalCarrito, CartItems }}>

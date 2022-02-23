@@ -1,4 +1,4 @@
-.cartCard{
+.carritoCard{
     width: 50%;
     height: auto;
     background-color: white;
@@ -34,25 +34,6 @@
     width: 35%;
 }
 
-.eliminar{
-    width: 70%;
-    background-color: #ff60ca;
-    border-radius: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    color: white;
-}
-
-
-.vaciarCarrito{
-    background-color: #ff60ca;
-    border-radius: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    color: white;
-    width: 20%;
-    margin: auto;
-}
 
 h1, h2{
     text-align: center;
@@ -70,7 +51,7 @@ h1, h2{
     width: 100%;
 }
 
-.form{
+.datoForm{
     height: 30px;
     border: 1px solid #ced4da;
 border-radius: 10px;
@@ -87,3 +68,35 @@ margin-bottom: 10px;
     color: white;
     margin-bottom: 10px;
 }
+
+.eliminar{
+    background-color: #ff60ca;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    width: 50%;
+    margin: auto;
+    font-family: 'Josefin Sans', sans-serif;
+    display: block;
+}
+
+
+.eliminar:hover {
+    color:rgb(0, 0, 0);
+    }
+.boton1{
+    background-color: #ff60ca;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    width: 30%;
+    margin: auto;
+    font-family: 'Josefin Sans', sans-serif;
+    display: block;
+}
+
+.boton1:hover {
+    color:rgb(0, 0, 0);
+    }

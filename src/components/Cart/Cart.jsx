@@ -4,13 +4,13 @@ import { contexto } from "../../Context/CartContext";
 import { getFirestore } from "../../Firebase/firebase";
 import firebase from "firebase/app";
 import "./Cart.css";
+import mpago from "./mpago.png"
 
 const Cart = () => {
   const { cart, removeItem, clear, totalCarrito } = useContext(contexto);
   const [total, setTotal] = useState(0);
-
   const [orderId, setOrderId] = useState("");
-
+  
   const nameRef = useRef();
   const emailRef = useRef();
   const mobileRef = useRef();
@@ -19,7 +19,8 @@ const Cart = () => {
     setTotal(totalCarrito());
   }, [totalCarrito]);
 
-  const terminarCompra = () => {
+  const terminarCompra = (e) => {
+    e.preventDefault();
     const db = getFirestore();
     const orders = db.collection("orders");
 
@@ -37,18 +38,25 @@ const Cart = () => {
     orders
       .add(miOrden)
       .then(({ id }) => {
-        console.log("Orden ingresada: " + id);
         setOrderId(id);
       })
       .catch((err) => {
         console.log(err);
+      })
+    .finally(() => {
+        clear();
       });
   };
 
 
 
   return (
-    <>
+    <div className="divCart">
+    {orderId && (
+      <div className="carritoCard">
+        <h2> Compra realizada con éxito.</h2> <p>Tu orden de compra es: {orderId}</p>
+      </div>
+    )}
       {cart.length === 0 ? (
         <>
           <h2>Carrito vacío...</h2>
@@ -57,7 +65,8 @@ const Cart = () => {
           </h1>
         </>
       ) : (
-        <div  className="cartCard">
+        <>
+        <div  className="carritoCard">
           <h1>Total a pagar: $ {total}</h1>
           {cart.map((i) => (
             <div key={i.id} className="cardProducto">
@@ -69,22 +78,27 @@ const Cart = () => {
                 <p>Cantidad: {i.count}</p>
                 <p>Total: $ {i.item.price * i.count}</p>
               </div>
-              <div  className="boton">
                 <button className="eliminar"
                   onClick={() => removeItem(i.item.id)}
                 >
                   Eliminar
-                </button>
-              </div>
-            </div>
+                </button>            </div>
           ))}
-          <button  className="vaciarCarrito" onClick={() => clear()}>
+          <NavLink to='/' className="boton1">Seguir mirando 👀 </NavLink> <br />
+          <button  className="boton1" onClick={() => clear()}>
             Vaciar carrito
           </button>
         </div>
-        
+        </>
       )}
-      <div className="completaTusDatos">
+
+      <div className="carritoCard">
+          <h2>Medios de pago disponibles: </h2>
+          <img src={mpago} alt="Medios de Pago"/>
+          </div>
+
+<div className="carritoCard">
+            <form onSubmit={terminarCompra} className="completaTusDatos">
             <h2>Completa tus datos:</h2>
 
             <input
@@ -92,7 +106,8 @@ const Cart = () => {
               name="name"
               ref={nameRef}
               placeholder="Nombre completo"
-              className="form"
+              className="datoForm"
+              required
             />
 
             <input
@@ -100,7 +115,8 @@ const Cart = () => {
               name="mobile"
               ref={mobileRef}
               placeholder="Número de celular"
-              className="form"
+              className="datoForm"
+              required
             />
 
             <input
@@ -108,15 +124,16 @@ const Cart = () => {
               name="email"
               ref={emailRef}
               placeholder="Correo electrónico"
-              className="form"
+              className="datoForm"
+              required
             />
 
-            <button onClick={() => terminarCompra()} className="comprar">
+            <button onClick={() => terminarCompra()} className="boton1">
               ¡Comprar!
-            </button>
+            </button> </form>
           </div>
-          <h2> Tu número de orden es: {orderId}</h2>
-    </>
+          
+    </div>
   );
 };
 
