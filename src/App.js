@@ -5,6 +5,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
 import Cart from "./components/Cart/Cart";
 import CartContext from "./Context/CartContext";
+import Footer from './components/Footer/footer';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
               <Route path="/cart"> <Cart /> </Route>
             </Switch>
           </div>
+            <Footer/>
         </BrowserRouter>
       </CartContext>
   );

@@ -1,0 +1,24 @@
+.footerContainer{
+    background: #ff60ca;
+    box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    color: rgb(255, 255, 255);
+
+}
+
+.notasFooter{
+    color: rgb(255, 255, 255);
+    padding: 3px 15px;
+    border-radius: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    display: inline;
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+.notasFooter:hover {
+    color:rgb(0, 0, 0);
+    }

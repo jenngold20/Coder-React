@@ -1,0 +1,21 @@
+.boton1{
+    background-color: #ff60ca;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    width: 30%;
+    margin: auto;
+    font-family: 'Josefin Sans', sans-serif;
+    display: block;
+}
+
+.boton1:hover {
+    color:rgb(0, 0, 0);
+    }
+
+.emptyCart{
+    color:#ff60ca;
+    font-family: 'Josefin Sans', sans-serif;
+
+}

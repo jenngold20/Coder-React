@@ -5,6 +5,8 @@ import { getFirestore } from "../../Firebase/firebase";
 import firebase from "firebase/app";
 import "./Cart.css";
 import mpago from "./mpago.png"
+import CartEmpty from "./../EmptyCart/emptycart"
+
 
 const Cart = () => {
   const { cart, removeItem, clear, totalCarrito } = useContext(contexto);
@@ -51,7 +53,7 @@ const Cart = () => {
 
 
   return (
-    <div className="divCart">
+    <div className="margenes">
     {orderId && (
       <div className="carritoCard">
         <h2> Compra realizada con éxito.</h2> <p>Tu orden de compra es: {orderId}</p>
@@ -59,17 +61,14 @@ const Cart = () => {
     )}
       {cart.length === 0 ? (
         <>
-          <h2>Carrito vacío...</h2>
-          <h1>
-            <NavLink to="/" className="VerItems">Ver productos</NavLink>
-          </h1>
+          <CartEmpty />
         </>
       ) : (
         <>
         <div  className="carritoCard">
           <h1>Total a pagar: $ {total}</h1>
           {cart.map((i) => (
-            <div key={i.id} className="cardProducto">
+            <div key={i.id} className="ordenProd">
               <div >
                 <img src={i.item.image} alt="" className="imgCarrito"  />
               </div>
@@ -81,7 +80,7 @@ const Cart = () => {
                 <button className="eliminar"
                   onClick={() => removeItem(i.item.id)}
                 >
-                  Eliminar
+                  Eliminar 🗑️
                 </button>            </div>
           ))}
           <NavLink to='/' className="boton1">Seguir mirando 👀 </NavLink> <br />
