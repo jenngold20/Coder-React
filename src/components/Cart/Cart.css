@@ -112,3 +112,13 @@ font-family: 'Josefin Sans', sans-serif;
 .boton1:hover {
     color:rgb(0, 0, 0);
     }
+.mp {
+    width:100%;
+    height: auto;
+}
+
+@media (max-width: 576px) {
+    .mp {
+        max-width: 100%;
+    }
+}

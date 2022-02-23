@@ -93,8 +93,8 @@ const Cart = () => {
 
       <div className="carritoCard">
           <h2>Medios de pago disponibles: </h2>
-          <img src={mpago} alt="Medios de Pago"/>
-          </div>
+          <img src={mpago} alt="Medios de Pago" className="mp"/>
+      </div>
 
 <div className="carritoCard">
             <form onSubmit={terminarCompra} className="completaTusDatos">
