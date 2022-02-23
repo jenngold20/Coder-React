@@ -13,7 +13,7 @@ const Item = ({item}) => {
         <h4>{item.title}</h4>
         <h4>$ {item.price}</h4>
         <Link to={`/detalle/${item.id}`} className="detalle">
-          Ver detalle
+          Ver detalle  
         </Link>
       </div>
       </div>

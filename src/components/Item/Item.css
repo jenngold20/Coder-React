@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&family=Pacifico&display=swap');
+
 .item-Card{
-    width: 250px;
+    width: 280px;
     height: 400px;
     background-color: rgb(255, 255, 255);
     border-radius: 15px;
@@ -13,21 +15,29 @@
     margin-bottom: 2rem;
     justify-content: center;
     align-items: center;
+    font-family: 'Josefin Sans', sans-serif;
+
 }
-
-
 
 .imagen{
     width: 100%;
     height: auto;
 }
 
+
+.datos-item{
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 700;
+}
 .detalle{
     background-color: rgb(252, 0, 210);
     color: white;
     border-radius: 8px;
-    padding: 4px 7px;
+    padding: 4px 15px;
     text-decoration: none;
+    align-items: center;
+    margin: 40px;
 
 }
 

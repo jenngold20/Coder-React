@@ -1,58 +1,47 @@
-.nav{
-    display:flex;
-    
-}
-.nav li{
-    list-style: none;
-}
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&family=Pacifico&display=swap');
+
 
 .navbar{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
     background: #ff60ca;
     box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
 }
 
-.navLinks{
+.lista{
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
 }
 
 .navLink{
-    margin-right: 0.5rem;
-    text-decoration: none;
     color: rgb(255, 255, 255);
-    padding: 3px 6px;
-    border-radius: 10px;
+    padding: 3px 15px;
+    border-radius: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: larger;
+
+
 }
 
 .navLink:hover{
     background-color: rgb(247, 0, 214);
-    color: aliceblue;
-    list-style: none;
+    color: rgb(0, 0, 0);
 }
 
 li{
     list-style: none;
 }
 
-a{
-    text-decoration: none;
-    color: black;
+.nombre h1{
+    color: rgb(255, 255, 255);
+    padding: 3px 6px;
+    font-family: 'Pacifico', cursive;
+    font-size: 60px;
+
 }
 
-h1{
-    text-decoration: none;
-    color: black;
+a:link, a:visited, a:active {
+    text-decoration:none;
 }
-
-
 @media (max-width: 576px) {
     .navbar{
         justify-content: center;

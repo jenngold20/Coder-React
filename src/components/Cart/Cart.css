@@ -21,19 +21,13 @@
     align-items: center;
 }
 
-.imgCart{
-    width: 15%;
-}
-
 .imgCarrito{
     width: 100%;
     height: auto;
-    padding: 7px;
 }
 
 .descripcionCarrito{
     width: 70%;
-    padding: 5px;
 }
 
 .boton{
@@ -48,6 +42,7 @@
     padding-bottom: 5px;
     color: white;
 }
+
 
 .vaciarCarrito{
     background-color: #ff60ca;

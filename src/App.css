@@ -2,7 +2,7 @@
   min-height: 100vh;
   font-size: calc(10px + 1vmin);
   color: black;
-  background-color: #eee
+  background-color: rgb(253, 222, 253)
 }
 
 @keyframes App-logo-spin {
@@ -15,17 +15,23 @@
 }
 
 .carritoimg img {
-  width: 35px;
-  height: 35px;
+  width: 25px;
+  height: 25px;
+  margin:5px;
 }
 
 .carritoimg p{
   float: right;
+  margin-right: 25px;
   background-color: rgb(255, 255, 255);
   border-radius: 100%;
   width: 20px;
   height: 20px;
   color:rgb(255, 0, 212);
+  font-weight: bolder;
+  text-align: center;
+  font-size: 15px;
 }
+
 
 

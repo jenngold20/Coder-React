@@ -14,7 +14,7 @@ function App() {
           <div className="App">
             <NavBar />
               <Switch>
-              <Route exact path="/">    <ItemListContainer greeting="Productos" />     </Route>
+              <Route exact path="/">    <ItemListContainer />     </Route>
 
               <Route path="/category/:categoryId"> <ItemListContainer />      </Route>
 

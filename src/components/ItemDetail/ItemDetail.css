@@ -1,49 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&family=Pacifico&display=swap');
+
 .producto-Card{
     width: 50%;
-    height: auto;
+    height: 760px;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 25px;
     box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
     flex-direction: column;
     justify-content: center;
     align-items:center;
-    margin-top: 50px;
+    margin-top: 15px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
     display: flex;
+    font-family: 'Josefin Sans', sans-serif;
+
 }
 
-.imgContainer{
-    width: 50%;
+.imgContainer img{
+    width: 70%;
     padding: 10px
 }
 
-.img{
-    width: 70%;
-    height: auto;
-}
-
 .IrAlCarrito{
-    background-color: rgb(252, 0, 210);
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    border-radius: 8px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    width: 80%;
+    background-color: #ff60ca;
+    border-radius: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
     color:rgb(255, 255, 255);
     text-decoration: none;
     justify-content: center;
     align-items: center;
+    display: block;
+}
 
+.titulo{
+    font-weight: bolder;
 }
 
 .IrAlCarrito:hover {
-    color:rgb(247, 162, 228);
+    color:rgb(0, 0, 0);
     }
 
 .descriptionContainer{
@@ -52,8 +51,29 @@
     padding-right: 10px;
 }
 
+.seguirComprando{
+    background-color: #ff60ca;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+    display: block;
+}
+
+.seguirComprando:hover {
+    color:rgb(0, 0, 0);
+    }
+
 @media (max-width: 768px) {
-    .productoCard{
+    .producto-Card{
         flex-wrap: wrap;
     }
     .imgContainer{

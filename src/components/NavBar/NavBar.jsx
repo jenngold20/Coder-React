@@ -14,38 +14,40 @@ const NavBar = () => {
     <NavLink to="/">
     <img src={logo} alt="logo"/>
     </NavLink>
-    <ul className="navLinks">
+<div className="nombre">
+    <NavLink to="/">
+    <h1>   Barbie Collector  ♡</h1>
+    </NavLink></div>
+
+    <ul className="lista">
         <li>
         <NavLink
             to="/"
             className="navLink"
-            activeClassName="currentCategory"
         >
-            Productos
+            Productos ♡
         </NavLink>
         </li>
         <li>
         <NavLink
             to="/category/Barbie"
             className="navLink"
-            activeClassName="currentCategory"
         >
-            Barbie
+            Barbie  ♡
         </NavLink>
         </li>
         <li>
         <NavLink
             to="/category/Ken"
             className="navLink"
-            activeClassName="currentCategory"
         >
-        Ken
+        Ken  ♡
     </NavLink>
         </li>
         <li>
         <NavLink
             to="/cart"
-            className="navLink"
+            className="navLink" 
         >
             <CartWidget />
         </NavLink>
