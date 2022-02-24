@@ -14,7 +14,7 @@
 
 Check out a live version of the site, hosted on Netlify
 
- [https://jenngold.netlify.app/](https://jenngold.netlify.app/)
+ [https://621709e4b4e0ea3f2d12e47a--jenngold.netlify.app/](https://621709e4b4e0ea3f2d12e47a--jenngold.netlify.app/)
 
 <hr/>
 
