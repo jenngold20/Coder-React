@@ -40,7 +40,6 @@ Navigation example :
 
 [https://youtu.be/rJ7gmJT0IxE](https://youtu.be/rJ7gmJT0IxE)
 
-
 <hr/>
 
 ## How to set it up
@@ -53,7 +52,7 @@ Navigation example :
 
 Made by Jennifer Goldfeld
 
-*This file was last updated 02/23/2022* 
+*This file was last updated 02/24/2022* 
 
 
 ​
